@@ -1,3 +1,6 @@
+import '@/app/ui/global.css';
+import { inter , lusitana,roboto, rubik ,rubik2} from '@/app/ui/fonts';
+
 export default function RootLayout({
   children,
 }: {
@@ -5,7 +8,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+            <body className={`${rubik2.className} antialiased`}>{children}</body>
+
     </html>
   );
 }
